@@ -1,4 +1,4 @@
-package com.example.anet11.;
+package com.example.anet11;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity  implements  View.OnClickLis
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.mini.calculator);
+        setContentView(R.layout.nado);
 
         number1 = findViewById(R.id.et_number1);
         number2 = findViewById(R.id.et_number2);
@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity  implements  View.OnClickLis
         btnPlus = findViewById(R.id.btn_plus);
         btnMinus = findViewById(R.id.btn_minus);
         btnMulti = findViewById(R.id.btn_multi);
-        btnDivide = findViewById(R.id.btn_divis);
+        btnDivide = findViewById(R.id.btn_divide);
 
         tvResult = findViewById(R.id.tv_result);
 
@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity  implements  View.OnClickLis
                     Integer.parseInt(number2.getText().toString());
 
 
-        }else if(view.getId() == R.id.btn_divis){
+        }else if(view.getId() == R.id.btn_divide){
             res = Integer.parseInt(number1.getText().toString()) /
                     Integer.parseInt(number2.getText().toString());
 
